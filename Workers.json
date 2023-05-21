@@ -1,0 +1,137 @@
+[
+  {
+    "_id": "field_agent",
+    "name": "Field Agent",
+    "description": "Field agents increase the odds of intelligence breakthrough or uncover foreign plots. If captured, can be traded or may cause diplomatic strain.",
+    "reportsTo": ["Roles/ciadirector", "Roles/statesec"],
+    "effects": {
+      "onPlacement": {
+        "espionageEffectiveness": +10
+      },
+      "onCapture": {
+        "domesticApproval": -5,
+        "defconLevel": +1
+      }
+    },
+    "riskOfCapture": 0.1
+  },
+  {
+    "_id": "diplomat",
+    "name": "Diplomat",
+    "description": "Diplomats improve international relations and can negotiate trades or treaties. If caught in a scandal or fail in negotiations, it may worsen international relations.",
+    "effects": {
+      "onPlacement": {
+        "internationalRelations": +10
+      },
+      "onScandal": {
+        "domesticApproval": -10,
+        "internationalRelations": -10
+      }
+    },
+    "riskOfScandal": 0.1
+  },
+
+  {
+    "_id": "military_unit",
+    "name": "Military Unit",
+    "description": "Can stabilize a region, deter aggression, or project power, but can increase tension if deployed in contested areas.",
+    "effects": {
+      "onPlacement": {
+        "stability": +10
+      },
+      "onConflict": {
+        "domesticApproval": -10,
+        "defconLevel": +1
+      }
+    },
+    "riskOfConflict": 0.1
+  },
+  {
+    "_id": "journalist",
+    "name": "Journalist",
+    "description": "Increase public exposure to certain events, improving domestic approval but can also be captured or cause international incidents.",
+    "effects": {
+      "onPlacement": {
+        "domesticApproval": +10
+      },
+      "onCapture": {
+        "domesticApproval": -5,
+        "defconLevel": +1
+      }
+    },
+    "riskOfCapture": 0.1
+  },
+  {
+    "_id": "humanitarian_worker",
+    "name": "Humanitarian Worker",
+    "description": "Improve domestic approval and international relations, especially during crises, but can be hampered by civil unrest or foreign interference.",
+    "effects": {
+      "onPlacement": {
+        "domesticApproval": +10,
+        "internationalRelations": +5
+      },
+      "onConflict": {
+        "domesticApproval": -10,
+        "internationalRelations": -5
+      }
+    },
+    "riskOfConflict": 0.1
+  },
+  {
+    "_id": "cybersecurity_expert",
+    "name": "Cybersecurity Expert",
+    "description": "Improve espionage effectiveness and can reveal foreign espionage actions, but if they fail in their duties, domestic approval and espionage effectiveness might decrease.",
+    "effects": {
+      "onPlacement": {
+        "espionageEffectiveness": +10
+      },
+      "onFailure": {
+        "domesticApproval": -10,
+        "espionageEffectiveness": -5
+      }
+    },
+    "riskOfFailure": 0.1
+  },
+  {
+    "_id": "mole",
+    "name": "Mole",
+    "description": "Can infiltrate different sectors of government on the opponent's side and create twists and advantages.",
+    "effects": {
+      "onPlacement": {
+        "espionageEffectiveness": +15
+      },
+      "onDiscovery": {
+        "domesticApproval": -20,
+        "internationalRelations": -10,
+        "defconLevel": +1
+      }
+    },
+    "riskOfDiscovery": 0.05,
+    "specialAbilities": [
+      {
+        "_id": "sow_dissent",
+        "description": "Create internal strife in the opponent's government, reducing their effectiveness.",
+        "outcomes": {
+          "opponentDomesticApproval": -10
+        },
+        "riskOfDiscovery": 0.1
+      },
+      {
+        "_id": "steal_secrets",
+        "description": "Steal classified information, increasing your espionage effectiveness.",
+        "outcomes": {
+          "espionageEffectiveness": +20
+        },
+        "riskOfDiscovery": 0.15
+      },
+      {
+        "_id": "spread_misinformation",
+        "description": "Spread false information, causing confusion and reducing opponent's domestic approval.",
+        "outcomes": {
+          "opponentDomesticApproval": -10
+        },
+        "riskOfDiscovery": 0.1
+      }
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "leverage": {
+    "description": "A measure of a nation's overall advantage over the other in the conflict, based on a weighted sum of other metrics.",
+    "formula": {
+      "sum": [
+        "this.weights.domesticApproval*domesticApproval",
+        "this.weights.internationalRelations*(internationalRelations)",
+        "this.weights.economicProsperity*(economicProsperity)",
+        "this.weights.defcon*(defcon)",
+        "this.weights.espionageEfficacy*(espionageEfficacy)"
+      ]
+    },
+    "weights": {
+      "domesticApproval": 1.0,
+      "internationalRelations": 1.0,
+      "economicProsperity": 1.0,
+      "defconLevel": -1.0,
+      "espionageEfficacy": 1.0
+    }
+  }
+}

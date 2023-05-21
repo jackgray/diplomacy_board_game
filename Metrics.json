@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Domestic Approval",
+    "_id": "domesticApproval",
+    "description": "",
+    "modified_by": [
+      "PressSec/pressconference",
+      "propaganda",
+      "controlnarrative"
+    ]
+  },
+  {
+    "_id": "military_readiness",
+    "name": "Military Readiness",
+    "description": "A measure of the nation's ability to respond to direct threats or execute military actions. Decisions related to defense, random events, or the use of certain special abilities could affect military readiness.",
+    "initialValue": 50,
+    "maxValue": 100
+  },
+  {
+    "_id": "espionage_efficacy",
+    "name": "Espionage Effectiveness",
+    "description": "A measure of how effectively a nation is able to gather intelligence, interfere with the adversary, and protect against foreign interference. Decisions by the CIA director (or equivalent role) and certain random events could impact this metric.",
+    "initialValue": 50,
+    "maxValue": 100
+  },
+
+  {
+    "name": "Civil Unrest",
+    "_id": "civilUnrest",
+    "description": "Measuring the overall stability of the nation's internal affairs. Major decisions, scandals, and certain random events could increase civil unrest, making it harder to maintain domestic approval and congress power.",
+    "modified_by": []
+  },
+  {
+    "name": "International Standing",
+    "_id": "internationalstanding",
+    "description": "A broader measure than international perception, this could represent the nation's overall standing with non-adversary countries. Decisions that seem aggressive or underhanded could harm international relations, potentially leading to sanctions or reduced cooperation from allies.",
+    "modified_by": []
+  },
+  {
+    "id": "internationalRelations",
+    "name": "International Relations",
+    "value": 50,
+    "effectsOnOtherMetrics": [
+      {
+        "targetMetric": "diplomaticRelations",
+        "effect": "+0.1"
+      },
+      {
+        "targetMetric": "economicProsperity",
+        "effect": "+0.05"
+      },
+      {
+        "targetMetric": "domesticApproval",
+        "effect": "+0.05"
+      }
+    ]
+  },
+  {
+    "id": "domesticApproval",
+    "name": "Domestic Approval",
+    "value": 50,
+    "effectsOnOtherMetrics": [
+      {
+        "targetMetric": "economicProsperity",
+        "effect": "+0.1"
+      },
+      {
+        "targetMetric": "militaryStrength",
+        "effect": "+0.05"
+      }
+    ]
+  },
+  {
+    "id": "espionageEffectiveness",
+    "name": "Espionage Effectiveness",
+    "value": 50,
+    "effectsOnOtherMetrics": [
+      {
+        "targetMetric": "internationalRelations",
+        "effect": "-0.2"
+      },
+      {
+        "targetMetric": "domesticApproval",
+        "effect": "-0.1"
+      }
+    ]
+  },
+  {
+    "id": "politicalUnity",
+    "name": "Political Unity",
+    "value": 50,
+    "effectsOnOtherMetrics": [
+      {
+        "targetMetric": "domesticApproval",
+        "effect": "+0.15"
+      },
+      {
+        "targetMetric": "militaryStrength",
+        "effect": "+0.1"
+      },
+      {
+        "targetMetric": "economicProsperity",
+        "effect": "+0.05"
+      }
+    ]
+  }
+]

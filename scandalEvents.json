@@ -1,0 +1,98 @@
+{
+  "scandalEvents": [
+    {
+      "_id": "financial_misconduct",
+      "name": "Financial Misconduct",
+      "description": "A politician is discovered to have been involved in financial misconduct, reducing public trust.",
+      "effect": {
+        "domesticApproval": -10,
+        "congressPower": -5,
+        "defconLevel": 0
+      }
+    },
+    {
+      "_id": "sexual_misconduct",
+      "name": "Sexual Misconduct",
+      "description": "A high-ranking official is accused of sexual misconduct, leading to a wave of public outrage.",
+      "effect": {
+        "domesticApproval": -15,
+        "congressPower": -10,
+        "defconLevel": 0
+      }
+    },
+    {
+      "_id": "political_abuse_of_power",
+      "name": "Political Abuse of Power",
+      "description": "Evidence surfaces of a political leader abusing their power, causing a scandal and division within the government.",
+      "effect": {
+        "domesticApproval": -20,
+        "congressPower": -15,
+        "defconLevel": 0
+      }
+    },
+    {
+      "_id": "corruption_scandal",
+      "name": "Corruption Scandal",
+      "description": "Corruption is uncovered within the government, shaking public trust and reducing the efficacy of the administration.",
+      "effect": {
+        "domesticApproval": -25,
+        "congressPower": -20,
+        "defconLevel": 0
+      }
+    },
+    {
+      "_id": "espionage_allegations",
+      "name": "Espionage Allegations",
+      "description": "A member of the government is accused of espionage, creating a major scandal and uncertainty within the administration.",
+      "effect": {
+        "domesticApproval": -10,
+        "congressPower": -10,
+        "defconLevel": +1
+      }
+    },
+    {
+      "_id": "assassination_attempt",
+      "name": "Assassination Attempt",
+      "description": "There has been an assassination attempt on a prominent political figure. This has caused turmoil in the nation, affecting policy-making and public sentiment.",
+      "explanation": "This event could be triggered by a random draw of event cards, or it could be a possible consequence of a high Defcon level. When this event is triggered, the player affected has to cope with lower domestic approval and reduced power of congress. They could have options to investigate the assassination attempt, increase security measures, or seek justice, which would all require resources and careful decision-making.",
+      "effect": {
+        "domesticApproval": -25,
+        "congressPower": -20,
+        "defconLevel": +2
+      }
+    },
+    {
+      "_id": "corruption_scandal",
+      "name": "Corruption Scandal",
+      "description": "A significant corruption scandal has emerged, implicating several politicians and leading to a crisis of trust.",
+      "explanation": "The corruption scandal could be a possible consequence of making certain decisions in the game, like opting for riskier policy decisions. When this event is triggered, the player must decide how to manage the scandal. They could deny the allegations, initiate an internal investigation, or let the officials implicated step down. Each decision would carry its own risks and potential benefits.",
+      "effect": {
+        "domesticApproval": -30,
+        "congressPower": -15,
+        "defconLevel": +1
+      }
+    },
+    {
+      "_id": "leaked_negotiations",
+      "name": "Leaked Negotiations",
+      "description": "Sensitive details about ongoing negotiations have been leaked to the press, jeopardizing their success.",
+      "explanation": "This event could be triggered randomly or be a consequence of a failed espionage attempt. When triggered, this event would force the player to decide how to manage the fallout. They could continue negotiations as planned, re-strategize, or even accuse the other side of leaking the information, each with its own possible outcomes.",
+      "effect": {
+        "domesticApproval": -10,
+        "congressPower": -10,
+        "defconLevel": +2
+      }
+    },
+    {
+      "_id": "diplomatic_gaffe",
+      "name": "Diplomatic Gaffe",
+      "description": "A high-ranking official has made a significant diplomatic gaffe, offending an ally and complicating international relations.",
+      "explanation": "This could be a possible outcome of a failed diplomacy action. The player must decide how to manage the situation. They could issue an apology, stand by their official's words, or reassign the official responsible, again, each decision carrying its own potential consequences.",
+      "effect": {
+        "domesticApproval": -5,
+        "congressPower": -5,
+        "defconLevel": +1
+      }
+    }
+  ]
+}

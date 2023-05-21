@@ -1,0 +1,155 @@
+{
+  "randomEvents": [
+    {
+      "_id": "civil_protests",
+      "name": "Civil Protests",
+      "description": "The public takes to the streets to protest the government's handling of the crisis.",
+      "effect": {
+        "domesticApproval": -10,
+        "internationalPerception": -5,
+        "defconLevel": +1
+      }
+    },
+    {
+      "_id": "positive_media_coverage",
+      "name": "Positive Media Coverage",
+      "description": "The media is generally supportive of the government's handling of the crisis. Play to dampen the affects of another play.",
+      "effect": {
+        "domesticApproval": +10,
+        "internationalPerception": +5
+      }
+    },
+    {
+      "_id": "negative_media_coverage",
+      "name": "Negative Media Coverage",
+      "description": "The media is critical of the government's handling of the crisis.",
+      "effect": {
+        "domesticApproval": -10,
+        "internationalPerception": -5
+      }
+    },
+    {
+      "_id": "intelligence_breakthrough",
+      "name": "Intelligence Breakthrough",
+      "description": "Your intelligence services uncover vital information about the adversary's plans.",
+      "effect": {
+        "intelAccuracy": +20,
+        "defconLevel": -1
+      }
+    },
+    {
+      "_id": "intelligence_breach",
+      "name": "Intelligence Breach",
+      "description": "Your intelligence agency has suffered a serious breach, compromising important operations and exposing vulnerabilities.",
+      "effect": {
+        "domesticApproval": -5,
+        "espionageEffectiveness": -20,
+        "defconLevel": +1
+      },
+      "foreignInfluencePossible": true
+    },
+
+    {
+      "_id": "diplomatic_blunder",
+      "name": "Diplomatic Blunder",
+      "description": "A diplomatic faux pas worsens relations with the adversary.",
+      "effect": {
+        "internationalPerception": -10,
+        "defconLevel": +1
+      }
+    },
+    {
+      "_id": "economic_downturn",
+      "name": "Economic Downturn",
+      "description": "Economic instability at home reduces the resources available for foreign policy.",
+      "effect": {
+        "domesticApproval": -10,
+        "defconLevel": +1
+      }
+    },
+    {
+      "_id": "economic_boom",
+      "name": "Economic Boom",
+      "description": "A strong economy at home increases the resources available for foreign policy.",
+      "effect": {
+        "domesticApproval": +10,
+        "defconLevel": -1
+      }
+    },
+    {
+      "_id": "earthquake",
+      "name": "Major Earthquake",
+      "description": "A major earthquake has struck, diverting resources and focus to disaster relief and recovery.",
+      "effect": {
+        "domesticApproval": -20,
+        "congressPower": -10,
+        "defconLevel": -1
+      }
+    },
+    {
+      "_id": "flood",
+      "name": "Devastating Flood",
+      "description": "Widespread flooding has caused significant damage, impacting infrastructure and the economy.",
+      "effect": {
+        "domesticApproval": -15,
+        "congressPower": -5,
+        "defconLevel": -1
+      }
+    },
+    {
+      "_id": "drought",
+      "name": "Severe Drought",
+      "description": "A prolonged drought has led to a crisis in agriculture, affecting the food supply and the economy.",
+      "effect": {
+        "domesticApproval": -10,
+        "congressPower": -5,
+        "defconLevel": 0
+      }
+    },
+    {
+      "_id": "armed_standoff",
+      "name": "Armed Standoff",
+      "description": "An armed standoff between law enforcement and a militant group has led to a tense situation.",
+      "effect": {
+        "domesticApproval": -5,
+        "congressPower": -5,
+        "defconLevel": 0
+      }
+    },
+    {
+      "_id": "refugee_crisis",
+      "name": "Refugee Crisis",
+      "description": "A humanitarian crisis in a neighboring country has led to a massive influx of refugees, challenging resources and infrastructure.",
+      "effect": {
+        "domesticApproval": -10,
+        "civilUnrest": +15,
+        "congressPower": -5,
+        "internationalStanding": -5,
+        "defconLevel": 0
+      },
+      "foreignInfluencePossible": false
+    },
+    {
+      "_id": "national_strike",
+      "name": "National Strike",
+      "description": "A national strike by a major labor union has disrupted various sectors of the economy, leading to tension and unrest.",
+      "effect": {
+        "domesticApproval": -10,
+        "congressPower": -5,
+        "defconLevel": +1
+      }
+    },
+    {
+      "_id": "fuel_inflation",
+      "name": "Fuel Price Surge",
+      "description": "Fuel prices have skyrocketed, leading to economic instability and public dissatisfaction.",
+      "effect": {
+        "domesticApproval": -10,
+        "internationalPerception": -5,
+        "economicProsperity": -20,
+        "defconLevel": 0
+      },
+      "foreignInfluencePossible": true
+    }
+  ]
+}

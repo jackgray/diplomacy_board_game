@@ -1,0 +1,226 @@
+{
+  "specialAbilities": [
+    {
+      "_id": "drone_recon",
+      "name": "Drone Reconnaissance",
+      "description": "Deploy an advanced drone to gather reliable intelligence. Increase accuracy of intel, affecting the probability weights for positive outcomes.",
+      "role": "secretary_of_defense",
+      "effect": {
+        "intelAccuracy": +20
+      }
+    },
+    {
+      "_id": "drone_strike",
+      "name": "Drone Strike",
+      "description": "Launch a precision drone strike against a strategic target. Potential for high impact but risks escalation.",
+      "role": "secretary_of_defense",
+      "effect": {
+        "domesticApproval": +10,
+        "internationalPerception": -15,
+        "defconLevel": +1
+      }
+    },
+    {
+      "_id": "cyber_attack",
+      "name": "Cyber Attack",
+      "description": "Initiate a cyber attack to disrupt enemy infrastructure. Can cause significant disruption but has potential for retaliation.",
+      "role": "cia_director",
+      "effect": {
+        "domesticApproval": +5,
+        "internationalPerception": -10,
+        "defconLevel": +1
+      }
+    },
+    {
+      "_id": "deepfake_creation",
+      "name": "Deepfake Creation",
+      "description": "Create a convincing deepfake to manipulate public opinion or create disinformation. Powerful but risky tool.",
+      "role": "press_secretary",
+      "effect": {
+        "domesticApproval": +15,
+        "internationalPerception": -5
+      }
+    },
+    {
+      "_id": "intelligence_gathering",
+      "name": "Intelligence Gathering",
+      "description": "Collect sensitive information about the adversary's plans and capabilities. Increases knowledge about opponent's actions.",
+      "role": "cia_director",
+      "workers": ["Workers/field_agent"],
+      "nation": "neutral",
+      "tensionModification": 0,
+      "possibleRetaliation": "Counter-intelligence activities, Expulsion of diplomats",
+      "effect": {
+        "intelAccuracy": +15
+      }
+    },
+    {
+      "_id": "public_speech",
+      "name": "Public Speech",
+      "description": "Give a major public speech to rally support and maintain morale at home.",
+      "role": "press_secretary",
+      "nation": "neutral",
+      "tensionModification": -5,
+      "possibleRetaliation": "Propaganda campaigns, Discrediting the speech",
+      "effect": {
+        "domesticApproval": +20
+      }
+    },
+    {
+      "_id": "sanctions",
+      "name": "Sanctions",
+      "description": "Enact economic sanctions against the adversary to apply pressure. Can strain international relations.",
+      "role": "secretary_of_state",
+      "nation": "neutral",
+      "tensionModification": +10,
+      "effect": {
+        "domesticApproval": +10,
+        "internationalPerception": -10
+      }
+    },
+    {
+      "_id": "espionage",
+      "name": "Espionage",
+      "description": "Send spies to gather secret information, sabotage enemy plans, or create unrest.",
+      "role": "cia_director",
+      "nation": "neutral",
+      "tensionModification": +10,
+      "effect": {
+        "intelAccuracy": +10,
+        "defconLevel": +1
+      }
+    },
+    {
+      "_id": "blackmail",
+      "name": "Blackmail",
+      "description": "Use compromising information against an adversary's political figure. Potentially damaging to both sides.",
+      "role": "cia_director",
+      "nation": "neutral",
+      "tensionModification": +15,
+      "effect": {
+        "domesticApproval": -5,
+        "internationalPerception": -10,
+        "defconLevel": +1
+      }
+    },
+    {
+      "_id": "trade_tax",
+      "name": "Trade Tax",
+      "description": "Imposing tax on foreign goods can potentially hurt the opponent's economy.",
+      "role": "Secretary of Treasury",
+      "nation": "neutral",
+      "effects": {
+        "domesticApproval": -5,
+        "opponentEconomicProsperity": -15,
+        "internationalRelations": -10
+      },
+      "retaliationRisk": "economicSanctions"
+    },
+    {
+      "_id": "diplomatVisit",
+      "name": "Diplomatic Negotiation",
+      "description": "Diplomats can negotiate with the opponent's diplomats to resolve conflicts and improve relations. Both sides get points for engaging, but the initiator gets more.",
+      "role": "Diplomat",
+      "nation": "neutral",
+      "effects": {
+        "internationalRelations": +10,
+        "tensionModification": -10
+      },
+      "retaliationRisk": "diplomaticSanctions"
+    },
+    {
+      "_id": "secretarynegotiation",
+      "name": "Secretary Negotiation",
+      "description": "The Secretary of State can negotiate with the opponent's Secretary of State, potentially leading to agreements and treaties.",
+      "role": "Secretary of State",
+      "nation": "neutral",
+      "effects": {
+        "internationalRelations": +10,
+        "tensionModification": -10
+      },
+      "retaliationRisk": "diplomaticSanctions"
+    },
+    {
+      "_id": "presidential_meeting",
+      "name": "Presidential Meeting",
+      "description": "The President can meet with the opponent's leader, which can lead to significant changes in relations and policies.",
+      "role": "President",
+      "nation": "neutral",
+      "effects": {
+        "internationalRelations": +15,
+        "tensionModification": -20
+      },
+      "retaliationRisk": "diplomaticSanctions"
+    },
+    {
+      "_id": "convene_congress",
+      "name": "Convene Congress",
+      "description": "The President can convene Congress to discuss and potentially approve an act of war.",
+      "role": "President",
+      "nation": "neutral",
+      "effects": {
+        "domesticApproval": -10,
+        "internationalRelations": -20,
+        "defconLevel": +1
+      },
+      "retaliationRisk": "militaryAction"
+    },
+    {
+      "_id": "involve_un",
+      "name": "Involve United Nations",
+      "description": "The President or Secretary of State can involve the United Nations in hopes of resolving international disputes.",
+      "role": "Secretary of State",
+      "nation": "neutral",
+      "effects": {
+        "internationalRelations": +20,
+        "tensionModification": -20
+      },
+      "retaliationRisk": "diplomaticSanctions"
+    },
+    [
+        {
+          "_id": "treaty",
+          "name": "Treaty or Resolution",
+          "description": "Resolve a conflict or disagreement through diplomatic means.",
+          "requires": {
+            "events": ["meeting", "negotiation"],
+            "abilities": []
+          },
+          "effects": {
+            "internationalRelations": +20,
+            "domesticApproval": +10,
+            "defconLevel": -1
+          },
+          "associatedRole": "Secretary of State",
+          "opponentPossibleRetaliation": {
+            "rejection": -20,
+            "espionageIncrease": +10
+          },
+          "associatedWorkers": ["diplomat"]
+        },
+        {
+          "_id": "blackmail",
+          "name": "Blackmail",
+          "description": "Use dirt on an official to reverse or influence their decision. The chances of successfully blackmailing various ranks and levels of Roles or Workers is a function of espionage points, the number of field workers deployed, and some degree of randomness to reflect the uncertainty and riskiness of such an action.",
+          "requires": {
+            "events": [],
+            "abilities": ["espionageActivity"],
+            "workers": ["field_agent"]
+          },
+          "effects": {
+            "domesticApproval": -5,
+            "internationalRelations": -10,
+            "opponentDomesticApproval": -15,
+            "opponentInternationalRelations": -5
+          },
+          "associatedRole": "Director of CIA",
+          "opponentPossibleRetaliation": {
+            "scandal": -20,
+            "espionageIncrease": +15
+          },
+          "associatedWorkers": ["spy"]
+        }
+      ]
+      
+  ]
+}

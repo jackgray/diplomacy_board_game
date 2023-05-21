@@ -1,0 +1,239 @@
+[
+  {
+    "_id": "reportsfromcubanexiles",
+    "name": "Reports from Cuban Exiles",
+    "date": "Early 1962"
+  },
+  {
+    "_id": "firstphotographicevidenceofsovietmilitarybuildup",
+    "name": "First Photographic Evidence of Soviet Military Buildup",
+    "date": "August 14, 1962"
+  },
+  {
+    "_id": "usintelligenceincreaseinsurveillance",
+    "name": "US Intelligence Increase in Surveillance",
+    "date": "August 29, 1962"
+  },
+  {
+    "_id": "furtherconfirmationofsovietmilitaryactivity",
+    "name": "Further Confirmation of Soviet Military Activity",
+    "date": "September 4, 1962"
+  },
+  {
+    "_id": "usintelligenceidentifiesmissiletransportequipment",
+    "name": "US Intelligence Identifies Missile Transport Equipment",
+    "date": "September 19, 1962"
+  },
+  {
+    "_id": "usintelligenceidentifyingsurface-to-airmissileinstallations",
+    "name": "US Intelligence Identifying Surface-To-Air Missile Installations",
+    "date": "October 14, 1962"
+  },
+  {
+    "_id": "firstinstallationofsovietnuclearmissiles",
+    "name": "First Installation of Soviet Nuclear Missiles",
+    "date": "Late August, 1962",
+    "preceding_events": []
+  },
+  {
+    "_id": "usconfirmationofsovietmissilesincuba",
+    "name": "US Confirmation of Soviet Missiles in Cuba",
+    "date": "October 14, 1962"
+  },
+  {
+    "_id": "receiptofureport",
+    "name": "Receipt of U-2 Report",
+    "date": "October 16, 1962"
+  },
+  {
+    "_id": "initialbriefingofpresidentkennedy",
+    "name": "Initial Briefing of President Kennedy",
+    "date": "October 16, 1962"
+  },
+  {
+    "_id": "presidentialdecisiontoformexcomm",
+    "name": "Presidential Decision to Form EXCOMM",
+    "date": "October 16, 1962"
+  },
+  {
+    "_id": "firstmeetingofexcomm",
+    "name": "First Meeting of EXCOMM",
+    "date": "October 16, 1962"
+  },
+
+  {
+    "_id": "uspublicannouncementofmissilepresence",
+    "name": "US Public Announcement of Missile Presence",
+    "date": "October 22, 1962"
+  },
+
+  {
+    "_id": "internationalreactions",
+    "name": "International Reactions",
+    "date": "October 22-23, 1962"
+  },
+  {
+    "_id": "sovietdenialofmissilepresence",
+    "name": "Soviet Denial of Missile Presence",
+    "date": "October 23, 1962"
+  },
+  {
+    "_id": "organizationofamericanstatesendorsement",
+    "name": "Organization of American States Endorsement",
+    "date": "October 23, 1962"
+  },
+  {
+    "_id": "mobilizationofusnavalforces",
+    "name": "Mobilization of US Naval Forces",
+    "date": "October 23, 1962"
+  },
+
+  {
+    "_id": "usnavalblockadeofcuba",
+    "name": "US Naval Blockade of Cuba",
+    "date": "October 24, 1962",
+    "preceding_events": []
+  },
+  {
+    "_id": "letterexchangesbetweenskennedyandkhrushchev",
+    "name": "Letter Exchanges Between Kennedy and Khrushchev",
+    "date": "October 26-27, 1962"
+  },
+  {
+    "_id": "shootingdownofusureconnaissanceplane",
+    "name": "Shooting Down of US U-2 Reconnaissance Plane",
+    "date": "October 27, 1962",
+    "preceding_events": []
+  },
+
+  {
+    "_id": "initialresponsestotheu2incident",
+    "name": "Initial Responses to the U-2 Incident",
+    "date": "October 27, 1962"
+  },
+  {
+    "_id": "excommmeetingspostu2incident",
+    "name": "EXCOMM Meetings Post U-2 Incident",
+    "date": "October 27, 1962"
+  },
+  {
+    "_id": "secretnegotiationswithsoviets",
+    "name": "Secret Negotiations with Soviets",
+    "date": "October 27, 1962",
+    "comprising_events": [
+      {
+        "_id": "initialsecretmeeting",
+        "name": "Initial Secret Meeting between RFK and Dobrynin",
+        "date": "October 27, 1962"
+      },
+      {
+        "_id": "rfkproposal",
+        "name": "RFK's Proposal of Dismantling Jupiter Missiles",
+        "date": "October 27, 1962",
+        "alternate_choices": [
+          {
+            "_id": "nojunipermissleoffer",
+            "name": "No Agreement on Turkey",
+            "description": "The U.S. could have decided not to offer the removal of the Jupiter missiles from Turkey. This would have likely prolonged the crisis and increased the risk of military conflict."
+          }
+        ]
+      },
+      {
+        "event_type": "alternate",
+        "_id": "completesovietwithdrawal",
+        "name": "Complete Withdrawal of Soviet Personnel from Cuba",
+        "description": "The U.S. could have insisted that not only the missiles but all Soviet military personnel be withdrawn from Cuba. This would have been a hardline stance that the Soviet Union would likely have resisted, potentially escalating the conflict."
+      },
+      {
+        "_id": "bilateraldisarmament",
+        "name": "Bilateral Disarmament Agreement",
+        "event_type": "alternate",
+        "description": "The U.S. and the Soviet Union could have used the crisis as an opportunity to negotiate a broader bilateral disarmament agreement.",
+        "outcomes": [
+          {
+            "points": [""],
+            "outcome_description": [
+              "Reduced tensions between the two superpowers",
+              "significant step towards de-escalation of the Cold War."
+            ]
+          }
+        ]
+      },
+      {
+        "_id": "dobryninrelayingproposal",
+        "name": "Dobrynin Relaying Proposal to Kremlin",
+        "date": "October 27, 1962",
+        "event_type": "actual"
+      },
+      {
+        "_id": "kremlinconsideration",
+        "name": "Kremlin's Consideration of the Proposal",
+        "date": "October 27, 1962"
+      },
+      {
+        "_id": "acceptanceofrfkproposal",
+        "name": "Acceptance of RFK's Proposal",
+        "date": "October 28, 1962"
+      }
+    ]
+  },
+  {
+    "_id": "letterfromkhrushchevofferingmissileremoval",
+    "name": "Letter from Khrushchev Offering Missile Removal",
+    "date": "October 27, 1962"
+  },
+  {
+    "_id": "usagreesnottomakeinvasionpledgepublic",
+    "name": "US Agrees Not to Make Invasion Pledge Public",
+    "date": "October 27, 1962",
+    "comprising_events": [
+      {
+        "_id": "excommdiscussiononsecretdeal",
+        "name": "EXCOMM Discussion on Secret Deal",
+        "date": "October 27, 1962"
+      },
+      {
+        "_id": "jfkagreementtosecrecy",
+        "name": "JFK Agreement to Secrecy",
+        "date": "October 27, 1962"
+      },
+      {
+        "_id": "rfkdeliversmessageofsecrecytodobrynin",
+        "name": "RFK Delivers Message of Secrecy to Dobrynin",
+        "date": "October 27, 1962"
+      },
+      {
+        "_id": "sovietacceptanceofsecrecy",
+        "name": "Soviet Acceptance of Secrecy",
+        "date": "October 27, 1962"
+      },
+      {
+        "_id": "uscontinuespublicstanceoncubanissue",
+        "name": "US Continues Public Stance on Cuban Issue",
+        "date": "October 28, 1962"
+      }
+    ],
+    "alternate_choice": {
+      "_id": "publicdisclosure",
+      "name": "Public Disclosure of the Entire Agreement",
+      "description": "The leaders could have decided to make the entire agreement, including the removal of U.S. Jupiter missiles from Turkey, public. This would have required a more significant diplomatic effort to manage the potential backlash from NATO allies."
+    }
+  },
+  {
+    "_id": "usresponseagreeingtomissileremovalterms",
+    "name": "US Response Agreeing to Missile Removal Terms",
+    "date": "October 28, 1962"
+  },
+
+  {
+    "_id": "resolvingthecrisis",
+    "name": "Resolving the Crisis",
+    "date": "October 28, 1962",
+    "preceding_events": []
+  },
+  {
+    "_id": "removalofsovietmissiles",
+    "name": "Removal of Soviet Missiles",
+    "date": "Early November, 1962"
+  }
+]

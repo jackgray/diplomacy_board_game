@@ -1,0 +1,581 @@
+[
+  {
+    "stakeholders": [
+      {
+        "name": "United States",
+        "goals": ["Prevent deployment of nuclear weapons in Cuba"],
+        "resources": [
+          "Military force",
+          "Economic power",
+          "Diplomatic influence"
+        ],
+        "actions": ["Naval blockade", "Negotiations", "Military strike"],
+        "metrics": {
+          "name": "Domestic Approval",
+          "_id": "domesticApproval",
+          "description": "",
+          "modified_by": [
+            "PressSec/pressconference",
+            "propaganda",
+            "controlnarrative"
+          ]
+        },
+        "internationalPerception": 60,
+        "defconLevel": 3,
+        "nationalProsperity": 80,
+        "compromisePoints": 0,
+        "politicalUnity": 70,
+        "congressPower": 60,
+
+        "roles": {
+          "secretaryOfState": {
+            "actions": ["Negotiations", "Diplomacy"],
+            "decisions": [
+              {
+                "id": "propose_treaty",
+                "description": "Propose a treaty to de-escalate the situation.",
+                "outcomes": {
+                  "domesticApproval": +5,
+                  "internationalPerception": +10,
+                  "defconLevel": +2
+                }
+              }
+            ]
+          },
+          "secretaryOfDefense": {
+            "actions": ["Military operations"],
+            "decisions": [
+              {
+                "id": "initiate_airstrikes",
+                "description": "Initiate airstrikes on strategic targets.",
+                "outcomes": {
+                  "domesticApproval": +10,
+                  "internationalPerception": -15,
+                  "defconLevel": -3
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "treasurysec",
+        "decisions": [
+          {
+            "decision_id": "impose_sanctions",
+            "name": "Impose Sanctions",
+            "description": "Impose economic sanctions.",
+            "outcomes": {
+              "domesticApproval": +5,
+              "internationalPerception": +5,
+              "defconLevel": -1
+            }
+          }
+        ]
+      },
+      {
+        "_id": "cia_director",
+        "name": "CIA Director",
+        "description": "The Director of the Central Intelligence Agency (CIA) plays a critical role in gathering intelligence, predicting potential threats, advising the President, and managing the consequences of international events.",
+        "decisions": [
+          {
+            "_id": "confirm_missile_presence",
+            "description": "Confirm the presence of Soviet medium-range ballistic missiles in Cuba.",
+            "outcomes": {
+              "domesticApproval": 0,
+              "internationalPerception": 0,
+              "defconLevel": +2
+            }
+          },
+          {
+            "_id": "advise_on_options",
+            "description": "Advise the President on possible courses of action, favoring an aggressive response.",
+            "outcomes": {
+              "domesticApproval": 0,
+              "internationalPerception": -5,
+              "defconLevel": +1
+            },
+            "cards": {
+              "negative": "CIA director provides bad intelligence",
+              "effect": "Lower the odds of success on next turn"
+            }
+          },
+          {
+            "_id": "provide_intelligence_updates",
+            "description": "Provide continuous updates on the status of the missiles in Cuba.",
+            "outcomes": {
+              "domesticApproval": 0,
+              "internationalPerception": 0,
+              "defconLevel": 0
+            }
+          },
+          {
+            "_id": "predict_soviet_intentions",
+            "description": "Predict Soviet intentions based on gathered intelligence, increasing preparation for potential threats.",
+            "outcomes": {
+              "domesticApproval": +5,
+              "internationalPerception": +5,
+              "defconLevel": -1
+            },
+            "cards": [
+              {
+                "positive": [
+                  {
+                    "name": "this",
+                    "effect": "increment "
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "un_ambassador",
+        "decisions": [
+          {
+            "id": "propose_resolution",
+            "description": "Propose a resolution to the United Nations.",
+            "outcomes": {
+              "domesticApproval": +5,
+              "internationalPerception": +10,
+              "defconLevel": +1
+            }
+          }
+        ]
+      },
+      {
+        "id": "press_secretary",
+        "name": "Press Secretary",
+        "description": "The Press Secretary plays a significant role in managing political controversies and shaping the public's perception of the administration's handling of such controversies.",
+        "decisions": [
+          {
+            "id": "release_statement",
+            "description": "Release a public statement to shape the narrative.",
+            "outcomes": {
+              "domesticApproval": +10,
+              "internationalPerception": +5,
+              "defconLevel": 0
+            }
+          },
+
+          {
+            "_id": "controlnarrative",
+            "name": "Control the Narrative",
+            "description": "The Press Secretary can help craft a narrative that puts the administration's actions in the most favorable light. This can involve emphasizing the positive aspects of the administration's response and downplaying any negative elements."
+          },
+          {
+            "_id": "hostpressconferences",
+            "name": "Host Press Conferences",
+            "description": "Regular press conferences can be used to provide updates, explain policy decisions, and answer questions from the media. "
+          },
+          {
+            "_id": "coordinatewithmedia",
+            "name": "Coordinate with Media",
+            "description": "The Press Secretary can develop relationships with members of the media to ensure that the administration's viewpoint is being accurately represented in news reports..."
+          },
+          {
+            "_id": "releaseofficialstatements",
+            "name": "Release Official Statements",
+            "description": "The Press Secretary can release official statements to clarify the administration's position, correct misinformation, or provide updates on the situation..."
+          },
+          {
+            "_id": "managesocialmedia",
+            "name": "Manage Social Media",
+            "description": "In the digital age, managing social media is an important part of a Press Secretary's role...",
+            "cards": [
+              {
+                "positive": [
+                  {
+                    "name": "",
+                    "description": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "_id": "arrangeinterviews",
+            "name": "Arrange Interviews",
+            "description": "The Press Secretary can arrange for officials from the administration to give interviews on news programs..."
+          }
+        ]
+      },
+      {
+        "name": "Soviet Union",
+        "goals": ["Maintain strategic advantage"],
+        "resources": [
+          "Military force",
+          "Nuclear weapons",
+          "Diplomatic influence"
+        ],
+        "actions": ["Deploy missiles", "Negotiations", "Military escalation"],
+        "metrics": {
+          "domesticApproval": 65,
+          "internationalPerception": 55,
+          "defconLevel": 3,
+          "nationalProsperity": 70,
+          "compromisePoints": 0
+        },
+        "roles": [
+          {
+            "id": "general_secretary",
+            "decisions": [
+              {
+                "id": "escalate_military_presence",
+                "description": "Increase the military presence in Cuba.",
+                "outcomes": {
+                  "domesticApproval": +10,
+                  "internationalPerception": -5,
+                  "defconLevel": -2
+                }
+              }
+            ]
+          },
+          {
+            "id": "minister_of_defense",
+            "decisions": [
+              {
+                "id": "initiate_military_drills",
+                "description": "Initiate large-scale military drills in the Baltic Sea.",
+                "outcomes": {
+                  "domesticApproval": +10,
+                  "internationalPerception": -5,
+                  "defconLevel": -1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "rounds": [
+      {
+        "id": 1,
+        "events": ["US discovers nuclear missiles in Cuba"],
+        "decisions": {
+          "unitedstates": {
+            "action": "Implement naval blockade",
+            "effect": {
+              "domesticApproval": -5,
+              "internationalPerception": +10,
+              "defconLevel": +1,
+              "nationalProsperity": -2,
+              "compromisePoints": 0
+            }
+          },
+          "sovietunion": {
+            "action": "Increase military readiness",
+            "effect": {
+              "domesticApproval": +5,
+              "internationalPerception": -10,
+              "defconLevel": +1,
+              "nationalProsperity": -3,
+              "compromisePoints": 0
+            }
+          }
+        },
+        "modifiers": [
+          {
+            "type": "Propaganda",
+            "target": "unitedstates",
+            "effect": {
+              "domesticApproval": +10,
+              "internationalPerception": -5
+            }
+          },
+          {
+            "type": "UN Condemnation",
+            "target": "sovietunion",
+            "effect": {
+              "internationalPerception": -10
+            }
+          },
+          {
+            "type": "Powerful Ally",
+            "target": "unitedstates",
+            "mode": "both",
+            "effect": {
+              "domesticApproval": +5,
+              "internationalPerception": +5,
+              "opponent": {
+                "domesticApproval": -5,
+                "internationalPerception": -5
+              }
+            }
+          },
+          {
+            "type": "Controversial Policy",
+            "target": "unitedstates",
+            "mode": "penalize",
+            "effect": {
+              "politicalUnity": -10
+            }
+          }
+        ],
+        "outcome": "Tensions increase as naval blockade is put in place"
+      }
+    ],
+
+    "events": [
+      {
+        "id": "cuban_missile_discovery",
+        "description": "US spy planes discover nuclear missile sites in Cuba.",
+        "responses": [
+          {
+            "id": "naval_blockade",
+            "description": "Establish a naval blockade around Cuba.",
+            "role": "roles/defensesec",
+            "event_type": "actual",
+            "outcomes": {
+              "domesticApproval": +10,
+              "internationalPerception": +5,
+              "defconLevel": -1
+            },
+            "entity": "United States"
+          },
+
+          {
+            "id": "diplomatic_resolution",
+            "description": "Seek a diplomatic resolution with the Soviet Union.",
+            "outcomes": {
+              "domesticApproval": -5,
+              "internationalPerception": +15,
+              "defconLevel": 0
+            }
+          },
+          {
+            "id": "blockade_without_warning",
+            "description": "Establish a naval blockade without any prior warning.",
+            "outcomes": {
+              "domesticApproval": +15,
+              "internationalPerception": -10,
+              "defconLevel": -1
+            }
+          },
+          {
+            "id": "public_announcement_before_blockade",
+            "description": "Announce the intention to initiate a blockade before actually doing it.",
+            "outcomes": {
+              "domesticApproval": -5,
+              "internationalPerception": +10,
+              "defconLevel": -1
+            }
+          },
+          {
+            "id": "secret_blockade",
+            "description": "Initiate the blockade secretly, without public knowledge.",
+            "outcomes": {
+              "domesticApproval": 0,
+              "internationalPerception": 0,
+              "defconLevel": -1
+            }
+          },
+          {
+            "id": "limited_airstrike",
+            "description": "Launch a limited airstrike on the missile sites.",
+            "outcomes": {
+              "domesticApproval": +10,
+              "internationalPerception": -10,
+              "defconLevel": -2
+            }
+          },
+          {
+            "id": "full_scale_airstrike",
+            "description": "Launch a full-scale airstrike on the missile sites and other strategic sites.",
+            "outcomes": {
+              "domesticApproval": +20,
+              "internationalPerception": -20,
+              "defconLevel": -3
+            }
+          },
+          {
+            "id": "airstrike",
+            "description": "Launch an airstrike on the missile sites.",
+            "role": "roles/defensesec",
+            "event_type": "alternate",
+            "consequences": [
+              {
+                "name": "Preparation for Strikes",
+                "description": "The U.S. would prepare for the strikes, potentially escalating DEFCON levels and raising readiness among U.S. military forces worldwide. This might alarm allies and adversaries, possibly causing an increase in global tensions.",
+                "outcomes": {
+                  "domesticApproval": -5,
+                  "internationalPerception": -10,
+                  "defconLevel": +2
+                }
+              },
+              {
+                "name": "Execution of Strikes",
+                "_id": "execution_ofstrikes",
+                "consequences": [
+                  {
+                    "name": "Fail to destroy all the missiles",
+                    "consequences": [
+                      {
+                        "name": "leave some operational and ready for launch."
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Civilian Casualties",
+                    "description": "International Condemnation, Decrease in global standing",
+                    "outcomes": {
+                      "domesticApproval": -15,
+                      "internationalPerception": -20,
+                      "defconLevel": 0
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Soviet Aggressive Response",
+                "description": "The Soviet Union responds aggressively to the U.S. strikes.",
+                "outcomes": {
+                  "domesticApproval": -10,
+                  "internationalPerception": -10,
+                  "defconLevel": +1
+                }
+              },
+              {
+                "_id": "further_escalation_or_resolution",
+                "name": "Further Escalation or Resolution",
+                "description": "The crisis could escalate with reciprocal actions between the U.S. and USSR, or both sides could look for ways to deescalate the situation.",
+                "outcomes": {
+                  "domesticApproval": -5,
+                  "internationalPerception": -5,
+                  "defconLevel": +1
+                }
+              },
+              {
+                "_id": "long_term_consequences",
+                "name": "Long-Term Consequences",
+                "description": "Choosing to conduct air strikes hardens Cold War divisions and leads to an intensification of the arms race.",
+                "outcomes": {
+                  "domesticApproval": -10,
+                  "internationalPerception": -10,
+                  "defconLevel": 0
+                }
+              }
+            ],
+            "meter_adjustments": {
+              "domesticApproval": +5,
+              "internationalPerception": -15,
+              "defconLevel": -2
+            }
+          },
+
+          {
+            "id": "public_negotiations",
+            "description": "Propose open, public negotiations with the Soviet Union.",
+            "outcomes": {
+              "domesticApproval": -5,
+              "internationalPerception": +15,
+              "defconLevel": 0
+            }
+          },
+          {
+            "id": "backchannel_negotiations",
+            "description": "Attempt secret negotiations through unofficial or indirect channels.",
+            "outcomes": {
+              "domesticApproval": 0,
+              "internationalPerception": +10,
+              "defconLevel": 0
+            }
+          }
+        ],
+
+        "sovietunion": {
+          "decisions": [
+            {
+              "id": "retaliate",
+              "description": "Retaliate against any U.S. aggression.",
+              "outcomes": {
+                "domesticApproval": +10,
+                "internationalPerception": -10,
+                "defconLevel": -2
+              }
+            },
+            {
+              "id": "stand_down",
+              "description": "Stand down and remove the missiles.",
+              "outcomes": {
+                "domesticApproval": -10,
+                "internationalPerception": +10,
+                "defconLevel": 0
+              }
+            },
+            {
+              "id": "negotiate",
+              "description": "Negotiate with the U.S. to find a peaceful resolution.",
+              "outcomes": {
+                "domesticApproval": 0,
+                "internationalPerception": +10,
+                "defconLevel": 0
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "u2_spy_plane_shot_down",
+        "description": "A U.S. U-2 spy plane is shot down over Cuba.",
+        "stakeholders": {
+          "sovietunion": {
+            "decisions": [
+              {
+                "id": "shoot_down_plane",
+                "description": "Shoot down the U-2 spy plane.",
+                "outcomes": {
+                  "domesticApproval": +10,
+                  "internationalPerception": -10,
+                  "defconLevel": -2
+                }
+              },
+              {
+                "id": "let_plane_pass",
+                "description": "Let the U-2 spy plane pass without interfering.",
+                "outcomes": {
+                  "domesticApproval": -5,
+                  "internationalPerception": +10,
+                  "defconLevel": 0
+                }
+              }
+            ]
+          },
+          "unitedstates": {
+            "decisions": [
+              {
+                "id": "retaliate_militarily",
+                "description": "Retaliate militarily to the shooting down of the plane.",
+                "outcomes": {
+                  "domesticApproval": +15,
+                  "internationalPerception": -15,
+                  "defconLevel": -3
+                }
+              },
+              {
+                "id": "ignore_provocation",
+                "description": "Ignore the provocation and continue with negotiations.",
+                "outcomes": {
+                  "domesticApproval": -5,
+                  "internationalPerception": +10,
+                  "defconLevel": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    ],
+
+    "scenarios": [
+      {
+        "id": "Peaceful Resolution",
+        "description": "The crisis is resolved through diplomatic negotiations, avoiding nuclear war.",
+        "requirements": [
+          "Both stakeholders prioritize negotiations and have compromisePoints >= 5"
+        ]
+      }
+    ]
+  }
+]

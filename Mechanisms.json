@@ -1,0 +1,177 @@
+{
+  "mechanisms": [
+    {
+      "id": "international_relations",
+      "description": "The current state of international relations can affect the effectiveness of resources.",
+      "triggers": [
+        {
+          "event": "sanctions_imposed",
+          "effect": "-10 to resource effectiveness",
+          "resource": "embassy",
+          "associatedRole": "Secretary of State",
+          "associatedWorkers": ["diplomat"]
+        },
+        {
+          "event": "diplomatic_meeting",
+          "effect": "+10 to resource effectiveness",
+          "resource": "embassy",
+          "associatedRole": "Secretary of State",
+          "associatedWorkers": ["diplomat"]
+        }
+      ]
+    },
+    {
+      "id": "espionage",
+      "description": "Espionage can have positive and negative effects on resource usage.",
+      "triggers": [
+        {
+          "event": "spy_caught",
+          "effect": "-20 to resource effectiveness",
+          "resource": "intelligenceAgency",
+          "associatedRole": "Director of CIA",
+          "associatedWorkers": ["spy"]
+        },
+        {
+          "event": "intelligence_breakthrough",
+          "effect": {
+              "resourceEffecacy": +20,
+          "resource": "intelligenceAgency",
+          "associatedRole": "Director of CIA",
+          "associatedWorkers": ["spy"]
+        }
+      ]
+    },
+    {
+      "id": "media_influence",
+      "description": "Control over media outlets can significantly shape public opinion and domestic approval.",
+      "triggers": [
+        {
+          "event": "positive_coverage",
+          "effect": {
+              "domesticApproval": +10,
+          },
+          "resource": "mediaOutlet",
+          "associatedRole": "Press Secretary",
+          "associatedWorkers": ["journalist"]
+        },
+        {
+          "event": "negative_coverage",
+          "effect": "-10 to domesticApproval",
+          "resource": "mediaOutlet",
+          "associatedRole": "Press Secretary",
+          "associatedWorkers": ["journalist"]
+        }
+      ]
+    },
+    {
+      "id": "political_scandal",
+      "description": "Political scandals can reduce the power of congress to make policy, affecting domestic approval and international perception.",
+      "triggers": [
+        {
+          "event": "scandal_breaks",
+          "effect": "-15 to domesticApproval, -10 to internationalPerception",
+          "resource": "government",
+          "associatedRole": "Press Secretary",
+          "associatedWorkers": ["mole"]
+        },
+        {
+          "event": "scandal_averted",
+          "effect": "+10 to domesticApproval",
+          "resource": "government",
+          "associatedRole": "Press Secretary",
+          "associatedWorkers": ["mole"]
+        }
+      ]
+    },
+    {
+      "id": "resource_shortage",
+      "description": "Resource shortages can cause civil unrest and economic decline.",
+      "triggers": [
+        {
+          "event": "drought",
+          "effect": {
+            "domesticApproval": -15,
+            "economicProsperity": -10
+          },
+          "resource": "agriculture",
+          "associatedRole": "Secretary of Agriculture",
+          "associatedWorkers": ["agriculturalSpecialist"]
+        },
+        {
+          "event": "fuel_inflation",
+          "effect": {
+            "domesticApproval": -10,
+            "economicProsperity": -20
+          },
+          "resource": "energy",
+          "associatedRole": "Secretary of Energy",
+          "associatedWorkers": ["energySpecialist"]
+        }
+      ]
+    },
+
+    {
+      "id": "cyber_attack",
+      "description": "Cyber attacks can sabotage an adversary's infrastructure, causing economic turmoil and reducing their ability to operate efficiently.",
+      "triggers": [
+        {
+          "event": "cyber_attack_launched",
+          "effect": {
+            "economicProsperity": -20,
+            "defconLevel": +1
+          },
+          "resource": "cyberSecurity",
+          "associatedRole": "CIA Director",
+          "associatedWorkers": ["cyberSpecialist"],
+          "keyEvents": ["naval_blockade_of_cuba"],
+          "possibleScandals": ["political_abuse_of_power"]
+        },
+        {
+          "event": "cyber_attack_prevented",
+          "effect": {
+            "economicProsperity": +10,
+            "defconLevel": -1
+          },
+          "resource": "cyberSecurity",
+          "associatedRole": "CIA Director",
+          "associatedWorkers": ["cyberSpecialist"],
+          "keyEvent": "us_decision_to_publicly_announce_missile_presence",
+          "randomEvents": ["positive_media_coverage"],
+          "scandalEvent": "financial_misconduct"
+        }
+      ]
+    },
+    {
+      "id": "diplomatic_negotiations",
+      "description": "Diplomatic negotiations can help reduce international tension, improving international perception and potentially reducing the DEFCON level.",
+      "triggers": [
+        {
+          "event": "successful_negotiations",
+          "effect": {
+            "internationalPerception": +15,
+            "defconLevel": -1
+          },
+          "resource": "diplomacy",
+          "associatedRole": "Secretary of State",
+          "associatedWorkers": ["diplomat"],
+          "keyEvent": "resolving_the_crisis",
+          "randomEvent": "positive_media_coverage",
+          "scandalEvent": "none"
+        },
+        {
+          "event": "failed_negotiations",
+          "effect": {
+            "internationalPerception": -10,
+            "defconLevel": +1
+          },
+          "resource": "diplomacy",
+          "associatedRole": "Secretary of State",
+          "associatedWorkers": ["diplomat"],
+          "keyEvent": "shooting_down_of_u2_recon_plane",
+          "randomEvent": "negative_media_coverage",
+          "scandalEvent": "political_abuse_of_power"
+        }
+      ]
+    }
+  ]
+}

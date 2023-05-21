@@ -1,0 +1,67 @@
+[
+    {
+        "_id": "democracy4",
+        "name": "Democracy 4",
+        "description": "A political simulation game where you play as the president or prime minister of a country and make decisions to influence various policies."
+    },
+    {
+        "_id": "thepoliticalmachine2020",
+        "name": "The Political Machine 2020",
+        "description": "A political campaign simulation game where players compete against each other to win a presidential election."
+    },
+    {
+        "_id": "powerandrevolution",
+        "name": "Power & Revolution, Geopolitical Simulator 4",
+        "description": "A comprehensive geopolitical simulator where you control all aspects of a country's governance."
+    },
+    {
+        "_id": "twilightstruggle",
+        "name": "Twilight Struggle",
+        "description": "A tabletop game that simulates the Cold War, where players compete against each other using a point system to determine the winner."
+    },
+    {
+        "_id": "1960themakingofthepresident",
+        "name": "1960: The Making of the President",
+        "description": "A tabletop game where players compete in the 1960 U.S. Presidential election, with a point system determining the winner."
+    },
+    {
+        "_id": "crusaderkingsiii",
+        "name": "Crusader Kings III",
+        "description": "A grand strategy game where you control a medieval dynasty over hundreds of years, with decisions leading to a variety of narrative outcomes."
+    },
+    {
+        "_id": "civilizationvi",
+        "name": "Civilization VI",
+        "description": "A turn-based strategy game where you guide a civilization from prehistoric times into the future, with decisions shaping the game's outcome."
+    },
+    {
+        "_id": "thebannersagatrilogy",
+        "name": "The Banner Saga Trilogy",
+        "description": "A tactical role-playing game series where your decisions significantly impact the narrative and outcomes."
+    },
+    {
+        "_id": "tropico6",
+        "name": "Tropico 6",
+        "description": "A simulation game where you play as the leader of a Caribbean island nation, making decisions about city planning, diplomacy, and more."
+    },
+    {
+        "_id": "heartsofironiv",
+        "name": "Hearts of Iron IV",
+        "description": "A grand strategy game set in the lead-up to and during World War II, where as the leader of a nation you can steer the course of history in a different direction."
+    },
+    {
+        "_id": "europauniversalisiv",
+        "name": "Europa Universalis IV",
+        "description": "A grand strategy game that covers a period from the Late Middle Ages to the early modern period, where players control a nation and make decisions to shape historical outcomes."
+    },
+    {
+        "_id": "assassinscreedseries",
+        "name": "Assassin's Creed series",
+        "description": "An action-adventure series that often revolves around major historical events and periods, providing alternate outcomes to real historical events."
+    },
+    {
+        "_id": "althistory",
+        "name": "AltHistory",
+        "description": "A text-based game that allows players to control a country and make decisions that can lead to alternate outcomes of real historical events."
+    }
+]

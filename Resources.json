@@ -1,0 +1,125 @@
+[
+  {
+    "_id": "embassy",
+    "name": "Embassy",
+    "description": "A diplomatic mission in the opponent's nation that facilitates diplomacy, intelligence gathering, and espionage.",
+    "effects": {
+      "onUse": {
+        "diplomaticRelations": +10,
+        "espionageEffectiveness": +5
+      }
+    }
+  },
+  {
+    "_id": "state_controlled_media",
+    "name": "State Controlled Media",
+    "description": "A media outlet under the control of the state can shape public opinion and narrative.",
+    "effects": {
+      "onUse": {
+        "domesticApproval": +10,
+        "internationalRelations": -5
+      }
+    }
+  },
+  {
+    "_id": "allies",
+    "name": "Allies",
+    "description": "Nations that can be persuaded to take your side in international disputes, potentially imposing sanctions on your opponent.",
+    "effects": {
+      "onUse": {
+        "internationalRelations": +15,
+        "opponentEconomicProsperity": -10
+      }
+    }
+  },
+  {
+    "_id": "military_base",
+    "name": "Military Base",
+    "description": "A location that hosts military equipment and personnel, enhancing security and military operations.",
+    "effects": {
+      "onUse": {
+        "nationalSecurity": +10,
+        "defconLevel": -1
+      }
+    }
+  },
+  {
+    "_id": "research_institute",
+    "name": "Research Institute",
+    "description": "An organization dedicated to research and development, improving technology and scientific understanding.",
+    "effects": {
+      "onUse": {
+        "technologyAdvancement": +10,
+        "economicProsperity": +5
+      }
+    }
+  },
+  {
+    "_id": "financial_institutions",
+    "name": "Financial Institutions",
+    "description": "Banks and other organizations that deal with the flow of money, affecting economic prosperity and the availability of funds.",
+    "effects": {
+      "onUse": {
+        "economicProsperity": +15
+      }
+    }
+  },
+  {
+    "_id": "intelligence_agency",
+    "name": "Intelligence Agency",
+    "description": "A government organization responsible for the collection, analysis, and exploitation of information in support of law enforcement, national security, defense and foreign policy objectives.",
+    "effects": {
+      "onUse": {
+        "nationalSecurity": +5,
+        "espionageEffectiveness": +10
+      }
+    }
+  },
+  {
+    "_id": "technology",
+    "name": "Advanced Technology",
+    "description": "Access to advanced technological resources can bolster espionage efforts, military strength, and economic prosperity.",
+    "effects": {
+      "onUse": {
+        "espionageEffectiveness": +15,
+        "militaryStrength": +10,
+        "economicProsperity": +5
+      }
+    }
+  },
+  {
+    "_id": "natural_resources",
+    "name": "Abundant Natural Resources",
+    "description": "Having access to abundant natural resources can boost economic prosperity and allow for increased international trade.",
+    "effects": {
+      "onUse": {
+        "economicProsperity": +20,
+        "internationalRelations": +10
+      }
+    }
+  },
+  {
+    "_id": "population",
+    "name": "Large Population",
+    "description": "A large population provides a larger base for the workforce, increases domestic approval, and can provide a military advantage.",
+    "effects": {
+      "onUse": {
+        "economicProsperity": +10,
+        "domesticApproval": +5,
+        "militaryStrength": +5
+      }
+    }
+  },
+  {
+    "_id": "education_system",
+    "name": "Advanced Education System",
+    "description": "An advanced education system can boost domestic approval, improve economic prosperity, and enhance technological advancements.",
+    "effects": {
+      "onUse": {
+        "domesticApproval": +15,
+        "economicProsperity": +10,
+        "technology": +5
+      }
+    }
+  }
+]
