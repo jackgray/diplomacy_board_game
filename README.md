@@ -1,0 +1,1 @@
+Opponents play out an international conflict, taking turns making political moves that can affect various scales in scoring, and always have trade-offs and propagating effects.

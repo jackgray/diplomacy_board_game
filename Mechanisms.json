@@ -27,9 +27,9 @@
         {
           "event": "spy_caught",
           "effect": "-20 to resource effectiveness",
-          "resource": "intelligenceAgency",
+          "resource": "Resources/IntelligenceAgency",
           "associatedRole": "Director of CIA",
-          "associatedWorkers": ["spy"]
+          "associatedWorkers": ["spy", "source", "mole"]
         },
         {
           "event": "intelligence_breakthrough",

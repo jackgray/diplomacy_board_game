@@ -18,7 +18,7 @@
   },
   {
     "_id": "espionage_efficacy",
-    "name": "Espionage Effectiveness",
+    "name": "Espionage Efficacy",
     "description": "A measure of how effectively a nation is able to gather intelligence, interfere with the adversary, and protect against foreign interference. Decisions by the CIA director (or equivalent role) and certain random events could impact this metric.",
     "initialValue": 50,
     "maxValue": 100
@@ -84,6 +84,22 @@
         "effect": "-0.1"
       }
     ]
+  },
+  {
+      "name": "Diplomatic Relations",
+      "_id": "Metrics/diplomaticrelations",
+      "_key": "diplomaticrelations",
+      "initialValue": 50,
+      "effectsOnOtherMetrics": [
+          {
+          "targetMetric": "Metrics/domesticapproval",
+          "effect": "+0.2",
+          },
+          {
+              "targetMetric": "Metrics/internationalstanding",
+              "effect": "+0.5"
+          }
+      ]
   },
   {
     "id": "politicalUnity",

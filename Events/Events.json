@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Blown Cover",
+        "_key": "blowncover",
+        "_id":  "Events/blowncover",
+        "description": "One of your spies has been made.",
+        "card_text": "One of your spies has been made! Your oppenent my kill them, extract intel, or attempt to turn them against you.",
+        "effects": {
+            "targetMetric": "Metrics/espionageefficacy",
+            "effect": "",
+            "description": "Should be the same but opposite effect as placing the worker."
+        }
+    },
+    {
+        "name": "Cyber Attack"
+    },
+    {
+        "name": "Data Leak"
+    },
+    {
+        
+    }
+]

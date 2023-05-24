@@ -8,10 +8,11 @@
         "diplomaticRelations": +10,
         "espionageEffectiveness": +5
       }
-    }
+    },
+    "abilities": ["Actions/diplomaticmeeting"]
   },
   {
-    "_id": "state_controlled_media",
+    "_id": "statecontrolledmedia",
     "name": "State Controlled Media",
     "description": "A media outlet under the control of the state can shape public opinion and narrative.",
     "effects": {
@@ -44,7 +45,7 @@
     }
   },
   {
-    "_id": "research_institute",
+    "_id": "researchinstitute",
     "name": "Research Institute",
     "description": "An organization dedicated to research and development, improving technology and scientific understanding.",
     "effects": {
@@ -52,10 +53,13 @@
         "technologyAdvancement": +10,
         "economicProsperity": +5
       }
+    },
+    "institute": {
+      "name": "University"
     }
   },
   {
-    "_id": "financial_institutions",
+    "_id": "financialinstitutions",
     "name": "Financial Institutions",
     "description": "Banks and other organizations that deal with the flow of money, affecting economic prosperity and the availability of funds.",
     "effects": {
@@ -65,14 +69,25 @@
     }
   },
   {
-    "_id": "intelligence_agency",
+    "_id": "intelligence",
     "name": "Intelligence Agency",
     "description": "A government organization responsible for the collection, analysis, and exploitation of information in support of law enforcement, national security, defense and foreign policy objectives.",
     "effects": {
       "onUse": {
         "nationalSecurity": +5,
-        "espionageEffectiveness": +10
-      }
+        "espionageEfficacy": +10
+      },
+      "agencies": [
+        {
+          "name": "CIA"
+        },
+        {
+          "name": "Dept. of Defense"
+        },
+        {
+          "name": "NSA"
+        }
+      ]
     }
   },
   {
@@ -88,7 +103,7 @@
     }
   },
   {
-    "_id": "natural_resources",
+    "_id": "naturalresources",
     "name": "Abundant Natural Resources",
     "description": "Having access to abundant natural resources can boost economic prosperity and allow for increased international trade.",
     "effects": {
@@ -111,7 +126,7 @@
     }
   },
   {
-    "_id": "education_system",
+    "_id": "educationsystem",
     "name": "Advanced Education System",
     "description": "An advanced education system can boost domestic approval, improve economic prosperity, and enhance technological advancements.",
     "effects": {

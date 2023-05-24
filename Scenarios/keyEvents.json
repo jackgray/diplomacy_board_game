@@ -149,13 +149,30 @@
         "name": "Bilateral Disarmament Agreement",
         "event_type": "alternate",
         "description": "The U.S. and the Soviet Union could have used the crisis as an opportunity to negotiate a broader bilateral disarmament agreement.",
-        "outcomes": [
+        "consequences": [
           {
             "points": [""],
             "outcome_description": [
               "Reduced tensions between the two superpowers",
               "significant step towards de-escalation of the Cold War."
             ]
+          }
+        ]
+      },
+      {
+        "name": "United Nations Involvement",
+        "_id": "unitednationsinvolvement",
+        "description": "The leaders could have brought the negotiations to the United Nations to involve the international community in the resolution of the crisis.",
+        "consequences": [
+          {
+            "consequence_id": "bilateralincreasepressureforpeace",
+            "consequence_desc": "This might have increased pressure on both nations to find a peaceful resolution but could also have complicated the negotiations.",
+            "positivity_factor": "70"
+          },
+          {
+            "consequence_id": "complicatenegotiations",
+            "consequence_description": "Could complicate negotiations",
+            "positivity_factor": -30
           }
         ]
       },
