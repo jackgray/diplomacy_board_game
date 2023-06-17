@@ -103,6 +103,12 @@
     }
   },
   {
+    "name": "Air Traffic Controller - sorting hat"
+  },
+  {
+    "name": "Satellite"
+  },
+  {
     "_id": "naturalresources",
     "name": "Abundant Natural Resources",
     "description": "Having access to abundant natural resources can boost economic prosperity and allow for increased international trade.",

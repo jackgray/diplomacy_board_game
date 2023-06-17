@@ -11,3 +11,29 @@ Abilities:
 Abilities are actions provided by resources and workers. Proposing a Treaty requires both players have embassies and diplomats in each other's territory, and for at least one of their Secretary's of State (or equivalent) to be willing to travel (or both could meet in Geneva, though several diplomacy and international standing points are awarded to the player who travels their State secretary.
 
 An assassination attempt is an action only provided by a spy or a mole, and it comes with a substantial risk factor. It's success probability is based on level of relavent resources and status of the target. The consequence of failure is based on status of the target and a probabilistically determined context score, to capture the varying natures in which a failure could transpire. 
+
+
+## Workers
+
+* Intelligence Officer
+    - +2 Intelligence Points
+    
+    - Increases odds on: reconissance missions, gaining intel, assassinations, digging dirt
+
+    - Intelligence officers have concealed identities. They can be placed under the cover of a soldier, diplomat, analyst
+
+* Cybersecurity Specialist
+    - Dig up dirt
+    - Investigate foreign and domestic
+    - Gain intel
+
+* Foreign Advisor
+    - +2 Diplomacy Points
+
+* Soldier
+    - +2 Military Points
+    - +2 Technology Points
+    - Increases odds on: drone strikes, aerial strikes, rescue missions
+
+* Medic
+    -   Can 
